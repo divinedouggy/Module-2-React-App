@@ -2,9 +2,10 @@
 
 function NotFound() {
     return(
-        <div>
-            Page Not Found
-
+        <div className="forbidden">
+    
+            <h1>FORBIDDEN</h1>
+            <p>Page not found</p>
         </div>
     )
 }
