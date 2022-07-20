@@ -23,6 +23,8 @@ body{
 .ingredient{
   padding: 20px;
   border: 2px solid;
+  font-family: 'Cormorant SC', serif;
+  font-size: 19px;
   background-color: rgb(1, 170, 119);
   transition: all .5s;
 
@@ -50,6 +52,8 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-bottom: 1px solid saddlebrown;
+  
  
  
 
@@ -64,11 +68,14 @@ body{
   /* background-color: wheat; */
   text-shadow: 1px 1px 1px ;
   background-color: rgb(255, 236, 200);
+  border-right: 11px solid rgb(255, 236, 200);
+  
 
 }
 
 .links a{
  
+  font-family: 'Cormorant SC', serif;
   margin-top: 10px;
   margin-left: 2px;
   margin-right: 1px;
@@ -80,14 +87,19 @@ body{
   padding-left: 35px;
 
   border: 2px solid rgba(0, 0, 0, 0);
-  /* border-bottom: 2px solid; */
+
   border-top-right-radius: 20px;
   border-top-left-radius: 9px;
+  border-right: 11px solid rgba(46, 22, 6, 0.288); 
   transition: .2s;
 
 
 }
 
+.links a.active{
+  border-bottom: solid rgba(0, 0, 0, 0);
+  
+}
 
 
 a.active{
@@ -96,12 +108,20 @@ a.active{
   background-color: wheat;
   text-shadow: none;
   transform: scaleX(1.05) translateX(4px);
+  border-right: 4px solid wheat; 
+  z-index: 1;
+  transition: z-index none;
+  font-weight: 700;
+
+
 
 }
 
 a.active:hover{
   text-shadow: none;
   background-color: wheat;
+  border-right: 4px solid wheat; 
+  
 }
 
 
