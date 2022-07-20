@@ -49,8 +49,10 @@ function Container() {
 
     return (
         <div>
-            <IngrFilter onChange = {(event) => handleFilterChange(event)} />
-            <IngrList ingredients = {ingredientsToDisplay} />
+            <IngrFilter onChange = {(event) => handleFilterChange(event)}
+             />
+            <IngrList ingredients = {ingredientsToDisplay}
+            fetchIngredients ={fetchIngredients} />
             
         </div>
 
