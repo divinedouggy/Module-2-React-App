@@ -1,6 +1,11 @@
 
 function IngrList(props) {
 
+function test(card) {
+
+    card.innerText = "blue"
+}
+
     return(
         <div>
               <button onClick={props.fetchIngredients}>Reset List</button>
@@ -11,7 +16,7 @@ function IngrList(props) {
             return (
                 
                 <div class="ingredient" key={index}>
-                    <h2 >{ingredient.name}</h2>
+                    <h2 value={ingredient.name} onClick={e => test(e.target.value)} >{ingredient.name}</h2>
                 </div>
 
                 

@@ -9,6 +9,21 @@ body{
   background-color: wheat;
 }
 
+
+
+.title{
+position: absolute;
+font-family: 'Cormorant SC', serif;
+font-size: 24px;
+ color: yellow;
+ text-shadow: 2px 2px  goldenrod;
+ justify-content: space-evenly;
+ right: 0;
+ margin-right: 70px;
+ 
+
+}
+
 .inglist{
   
   display: flex;
@@ -37,17 +52,26 @@ body{
   background: linear-gradient(152deg, rgba(201,255,239,1) 3%, rgba(36, 134, 105, 0.919) 13%, rgba(46,255,192,1) 48%, rgba(201,255,239,1) 62%, rgba(46,255,192,1) 69%, rgba(36,134,105,1) 81%, rgba(46, 255, 192, 0.962) 93%);
   transform: scale(1.2);
   border-radius: 5px;
+  border-style: groove;
   transition: border-radius 2s;
   text-shadow: .5px .5px 3px ghostwhite;
   transition: text-shadow .4s .1s;
   outline:2px solid rgba(0, 255, 149, 0.774);
-  transition: outline .3s;
+  transition: outline .2s;
   z-index: 1;
   transition: z-index none;
 }
 
-.narrow{
+button{
+  font-family: 'Cormorant SC', serif;
+  font-weight: 700;
+  font-size: 20px;
+}
 
+.narrow{
+  font-family: 'Cormorant SC', serif;
+  font-size: 24px;
+  font-weight: 600;
   margin: 30px;
 }
 
