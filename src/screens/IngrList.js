@@ -1,10 +1,20 @@
+import { useRef, useEffect } from "react"
+
 
 function IngrList(props) {
 
-function test(card) {
+    const ref = useRef(null)
 
-    card.innerText = "blue"
-}
+    // useEffect(() => {
+    //     const el2 = ref.current;
+    //     console.log(el2)
+    // }, [])
+
+    function test(event) {
+        ref.current = event.target
+       
+        console.log(ref.current)
+    }
 
     return(
         <div>
@@ -13,19 +23,12 @@ function test(card) {
             
         {props.ingredients.map((ingredient, index) => {
           
-            return (
-                
-                <div class="ingredient" key={index}>
-                    <h2 value={ingredient.name} onClick={e => test(e.target.value)} >{ingredient.name}</h2>
+            return ( 
+                <div  class="ingredient" key={index} onClick={test}  >
+                    <h2 ref={ref} >{ingredient.name}</h2>
                 </div>
-
-                
             )
         })}
-
-
-
-
     </div>
     </div>
     )
