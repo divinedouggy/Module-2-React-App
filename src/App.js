@@ -6,6 +6,7 @@ import About from './screens/About'
 import Container from './screens/Container';
 import NotFound from './screens/NotFound';
 import Header from './components/Header';
+import Images from './screens/Images';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/ingredients" element={<Container/>}/>
         <Route path="*" element={<NotFound/>}/>
+        <Route path="/ingredients/'./screens/Images'" element={<Images/>}/>
 
       </Routes>
 

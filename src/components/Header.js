@@ -7,7 +7,10 @@ function Header() {
 
     <div className='header'>
 
-      <div className='title'><h1>Special Ingredients</h1></div>
+      <div className='title'>
+        {/* <h1>Special Ingredients</h1> */}
+      <img src={require("../images/logo.png")} alt="logo"/>
+      </div>
 
       <div className='links'>
         <nav>

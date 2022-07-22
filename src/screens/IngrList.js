@@ -1,5 +1,7 @@
 import { useRef, useEffect } from "react"
 
+import { Link } from "react-router-dom";
+
 
 function IngrList(props) {
 
@@ -12,8 +14,8 @@ function IngrList(props) {
 
     function test(event) {
         ref.current = event.target
-       
-        console.log(ref.current)
+       return ref.current.innerText
+        // console.log(ref.current.innerText)
     }
 
     return(
@@ -24,9 +26,12 @@ function IngrList(props) {
         {props.ingredients.map((ingredient, index) => {
           
             return ( 
-                <div  class="ingredient" key={index} onClick={test}  >
+                <Link to="'./screens/Images'"><div  class="ingredient" key={index} onClick={test}  >
                     <h2 ref={ref} >{ingredient.name}</h2>
-                </div>
+                   
+                  
+                   
+                </div></Link>
             )
         })}
     </div>
