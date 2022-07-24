@@ -33,12 +33,12 @@ font-size: 24px;
 }
 
 
+
 .title img{
   position: absolute;
   opacity: .7;
   filter: hue-rotate(280deg);
   transition: 2s;
-  animation: .75s ease-out 0s 1 zoomIn;
   height: 135px;
   width: 411px;
   top:16px;
@@ -55,19 +55,34 @@ font-size: 24px;
 
 
 
-.ingImage img{
+.ingImage{
+display: flex;
+justify-content: center;
+align-items: center;
   position: fixed;
-  top:10%;
-  left:30%;
-  text-align: center;
+  top:50%;
+  left: 50%;
   z-index: 999;
+ 
+
+}
+
+.ingImage img{
+position: fixed;
+animation: .75s ease-out 0s 1 zoomIn;
 
 }
 
 .home{
-  transform: scale(1.5);
-  transition: 3s;
+  font-family: 'Goudy Bookletter 1911', serif;
+  animation: .75s ease-out 0s 1 zoomIn;
+  font-size: 31px;
+}
 
+.about{
+  font-family: 'Goudy Bookletter 1911', serif;
+  animation: .75s ease-out 0s 1 zoomIn;
+  font-size: 26px;
 }
 
 .inglist{

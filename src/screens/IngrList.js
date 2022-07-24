@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react"
+import { useRef, useState} from "react"
 import axios from "axios"
 
 
@@ -9,18 +9,20 @@ function IngrList(props) {
 
     const ref = useRef(null)
 
-    // useEffect(() => {
-    //     const el2 = ref.current;
-    //     console.log(el2)
-    // }, [])
+
 
     const [imageToDisplay, setImageToDisplay] = useState("")
 
     async function getImage(event) {
+        closeImage()
         ref.current = event.target
         console.log(ref.current.innerText)
         const response = await axios.get(`https://a-cors-server.herokuapp.com/https://imsea.herokuapp.com/api/1?q=${ref.current.innerText}`)
         setImageToDisplay(<img src={response.data.results[0]} alt="ingredient"/>)
+    }
+
+    function closeImage() {
+        setImageToDisplay("")
     }
 
     return(
@@ -38,7 +40,7 @@ function IngrList(props) {
             )
         })}
     </div>
-    <div className="ingImage">{imageToDisplay}</div>     
+    <div className="ingImage" onClick={closeImage} >{imageToDisplay}</div>     
     </div>
     )
 }
