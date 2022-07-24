@@ -1,6 +1,8 @@
-import { useRef, useEffect } from "react"
+import { useRef, useState, useEffect } from "react"
+import axios from "axios"
 
-import { Link } from "react-router-dom";
+
+
 
 
 function IngrList(props) {
@@ -12,10 +14,13 @@ function IngrList(props) {
     //     console.log(el2)
     // }, [])
 
-    function test(event) {
+    const [imageToDisplay, setImageToDisplay] = useState("")
+
+    async function getImage(event) {
         ref.current = event.target
-       return ref.current.innerText
-        // console.log(ref.current.innerText)
+        console.log(ref.current.innerText)
+        const response = await axios.get(`https://cors-anywhere.herokuapp.com/https://imsea.herokuapp.com/api/1?q=${ref.current.innerText}`)
+        console.log(response.data.results[0])
     }
 
     return(
@@ -26,12 +31,9 @@ function IngrList(props) {
         {props.ingredients.map((ingredient, index) => {
           
             return ( 
-                <Link to="'./screens/Images'"><div  class="ingredient" key={index} onClick={test}  >
-                    <h2 ref={ref} >{ingredient.name}</h2>
-                   
-                  
-                   
-                </div></Link>
+                <div  class="ingredient" key={index} onClick={getImage}  >
+                    <h2 ref={ref} >{ingredient.name}</h2>                                
+                </div>
             )
         })}
     </div>
