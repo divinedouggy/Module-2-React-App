@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Special Ingredients
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with much assistance from the [Wizard World API](https://wizard-world-api.herokuapp.com/swagger/index.html) and the [Imsea API](https://imsea.herokuapp.com/)
 
 ## Available Scripts
 
