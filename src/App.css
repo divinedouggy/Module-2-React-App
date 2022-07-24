@@ -53,10 +53,13 @@ font-size: 24px;
   opacity: 1;
 }
 
+
+
 .ingImage img{
   position: fixed;
   top:10%;
   left:30%;
+  text-align: center;
   z-index: 999;
 
 }

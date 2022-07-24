@@ -19,7 +19,7 @@ function IngrList(props) {
     async function getImage(event) {
         ref.current = event.target
         console.log(ref.current.innerText)
-        const response = await axios.get(`https://cors-anywhere.herokuapp.com/https://imsea.herokuapp.com/api/1?q=${ref.current.innerText}`)
+        const response = await axios.get(`https://a-cors-server.herokuapp.com/https://imsea.herokuapp.com/api/1?q=${ref.current.innerText}`)
         setImageToDisplay(<img src={response.data.results[0]} alt="ingredient"/>)
     }
 
