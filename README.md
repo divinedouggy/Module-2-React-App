@@ -5,9 +5,12 @@ This project was created with much assistance from the [Wizard World API](https:
 ## Description
 
 This site explores the ingredients used in elixirs and potions in the Harry Potter universe.\
+
 Simply navigate to the ingredients tab and the list of ingredients will render, and if desired, type into the input box and the list will narrow down based on what you've typed.\
-Clicking an ingredient plugs the ingredient name into an image search engine and the first image result from the search will render in front of the screen.\
-Click the image again to close it, or click another ingredient to close it and render the next one.
+
+Clicking an ingredient plugs the ingredient name into an image search engine and the first image result from the search will render in front of the viewport.\
+
+Click the image again to close it, or click another ingredient to close the image and render the next one.
 
 ### `npm start`
 
