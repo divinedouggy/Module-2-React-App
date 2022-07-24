@@ -14,7 +14,7 @@ Click the image again to close it, or click another ingredient to close the imag
 
 ## Component Hierarchy
 
-![Component Hierarchy](src\images\componentHeirarchy.png)
+![Component Hierarchy](/src/images/componentHeirarchy.png)
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
