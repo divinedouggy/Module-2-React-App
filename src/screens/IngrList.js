@@ -20,7 +20,7 @@ function IngrList(props) {
         ref.current = event.target
         console.log(ref.current.innerText)
         const response = await axios.get(`https://cors-anywhere.herokuapp.com/https://imsea.herokuapp.com/api/1?q=${ref.current.innerText}`)
-        console.log(response.data.results[0])
+        setImageToDisplay(<img src={response.data.results[0]} alt="ingredient"/>)
     }
 
     return(
@@ -32,11 +32,13 @@ function IngrList(props) {
           
             return ( 
                 <div  class="ingredient" key={index} onClick={getImage}  >
-                    <h2 ref={ref} >{ingredient.name}</h2>                                
+                    <h2 ref={ref} >{ingredient.name}</h2>    
+                                        
                 </div>
             )
         })}
     </div>
+    <div className="ingImage">{imageToDisplay}</div>     
     </div>
     )
 }

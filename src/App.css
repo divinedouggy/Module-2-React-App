@@ -33,7 +33,7 @@ font-size: 24px;
 }
 
 
-img{
+.title img{
   position: absolute;
   opacity: .7;
   filter: hue-rotate(280deg);
@@ -45,12 +45,20 @@ img{
   right:0;
 }
 
-img:hover{
+.title img:hover{
   filter: hue-rotate(200deg) ;
   transition: 1.5s;
   transition: filter 4s .5s, transform .8s;
   transform: scale(1.05);
   opacity: 1;
+}
+
+.ingImage img{
+  position: fixed;
+  top:10%;
+  left:30%;
+  z-index: 999;
+
 }
 
 .home{
