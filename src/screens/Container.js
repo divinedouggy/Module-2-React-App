@@ -41,10 +41,6 @@ function Container() {
     }
     
 
-    // useEffect(() => {
-    //     console.log("ingtodisplay", ingredientsToDisplay)
-        
-    // }, [ingredientsToDisplay])
 
 
     return (
