@@ -1,7 +1,9 @@
 # Special Ingredients
 ![Special Ingredients logo](/src/images/logo.png)
 
+
 This project was created with much assistance from the [Wizard World API](https://wizard-world-api.herokuapp.com/swagger/index.html) and the [Imsea API](https://imsea.herokuapp.com/)
+
 
 ## Description
 
@@ -16,13 +18,9 @@ Click the image again to close it, or click another ingredient to close the imag
 
 ## Component Hierarchy
 
+
 ![Component Hierarchy](/src/images/componentHeirarchy.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ## APIs Used
 [Wizard World API](https://wizard-world-api.herokuapp.com/swagger/index.html) \
