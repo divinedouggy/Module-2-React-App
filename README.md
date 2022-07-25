@@ -1,4 +1,5 @@
 # Special Ingredients
+![Special Ingredients logo](/src/images/logo.png)
 
 This project was created with much assistance from the [Wizard World API](https://wizard-world-api.herokuapp.com/swagger/index.html) and the [Imsea API](https://imsea.herokuapp.com/)
 
