@@ -26,6 +26,10 @@ Click the image again to close it, or click another ingredient to close the imag
 [Wizard World API](https://wizard-world-api.herokuapp.com/swagger/index.html) \
 [Imsea API](https://imsea.herokuapp.com/)
 
+
+
+![App GIF](/src/images/sigif.gif)
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
