@@ -26,19 +26,19 @@ Click the image again to close it, or click another ingredient to close the imag
 [Wizard World API](https://wizard-world-api.herokuapp.com/swagger/index.html) \
 [Imsea API](https://imsea.herokuapp.com/)
 
-
-## Challenges I Faced (And How I Overcame Them)
-- Filtered ingredient list would not "unfilter" on backspace\
-*Added a reset button that fetches the ingredients again*
-- Image API had CORS issue\
-*Used [CORS-Anywhere](https://github.com/Rob--W/cors-anywhere) app*
-- CORS-Anywhere was only available as demo with temporary access/restrictions\
-*Hosted the app myself with the help of [this git respository/tutorial](https://github.com/Isoaxe/cors-server)*
-- Could not figure out how to make ingredient link to a separate Image component, passing the ingredient name to be searched\
-*Merely passed ingredient name to Imsea API and rendered image all in the same component*
-
 ## Get Your Wizard On
 ![App GIF](/src/images/sigif.gif)
+
+## Challenges I Faced (And How I Overcame Them)
+- *Filtered ingredient list would not "unfilter" on backspace*\
+**Added a reset button that fetches the ingredients again**
+- *Image API had CORS issue*\
+**Used [CORS-Anywhere](https://github.com/Rob--W/cors-anywhere) app**
+- *CORS-Anywhere was only available as demo with temporary access/restrictions*\
+**Hosted the app myself with the help of [this git respository/tutorial](https://github.com/Isoaxe/cors-server)**
+- *Could not figure out how to make ingredient link to a separate Image component, passing the ingredient name to be searched*\
+**Merely passed ingredient name to Imsea API and rendered image all in the same component**
+
 
 ## Things I Wish I Had Time For
 - Optimizing the app for mobile
